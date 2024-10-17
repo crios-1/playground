@@ -1,0 +1,43 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "forceConsistentCasingInFileNames": false,
+    "noImplicitOverride": false,
+    "noPropertyAccessFromIndexSignature": false,
+    "noImplicitReturns": false,
+    "noFallthroughCasesInSwitch": false,
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "ES2022",
+    "module": "ES2022",
+    "useDefineForClassFields": false,
+    "types": ["jasmine"],
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "lib": [
+      "ES2022",
+      "dom"
+    ],
+    "paths": {
+            "primeng/*": ["src/app/components/*/public_api"],
+            "@pages/*": ["src/app/pages/*"],
+            "@service/*": ["src/app/service/*"],
+            "@layout/*": ["src/app/layout/*"]
+        }
+  },
+  "exclude": ["node_modules", "**/node_modules/*", "src/app/components/**/*spec.ts"],
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": false,
+    "strictInputAccessModifiers": false,
+    "strictTemplates": false
+}
+}
